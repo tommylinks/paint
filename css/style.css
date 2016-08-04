@@ -22,9 +22,11 @@ body {
   text-transform: none;
   font: 29px/35px GothamProBold, sans-serif, sans-serif; }
 
-.section-header .header-wave-img {
-  position: absolute;
-  bottom: 0; }
+.header-bg {
+  position: relative; }
+  .header-bg .header-wave-img {
+    position: absolute;
+    bottom: 0; }
 
 .section-title {
   font-size: 19px;
@@ -96,7 +98,7 @@ body {
 
 .header-block {
   margin: 5% auto;
-  min-height: 560px;
+  min-height: 660px;
   min-height: 84vh;
   max-width: 1030px;
   width: 100%;

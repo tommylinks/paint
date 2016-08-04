@@ -38,12 +38,16 @@ body{
   font: 29px/35px $font-bold, sans-serif;
 }
 
-.section-header{
+
+.header-bg{
+  position: relative;
+  
   .header-wave-img{
     position: absolute;
     bottom: 0;
   }  
 }
+
 
 .section-title{
   font-size: 19px;
@@ -137,7 +141,7 @@ body{
 //header
 .header-block{
   margin: 5% auto;
-  min-height: 560px;
+  min-height: 660px;
   min-height: 84vh;
   max-width: 1030px;
   width: 100%;
