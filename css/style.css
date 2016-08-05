@@ -100,6 +100,50 @@ body {
     text-transform: uppercase;
     outline: none; }
 
+.snt-page-nav {
+  position: fixed;
+  right: 20px;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1; }
+  .snt-page-nav ul {
+    padding: 0;
+    margin: 0; }
+    .snt-page-nav ul li {
+      display: block;
+      width: 14px;
+      height: 13px;
+      margin: 7px;
+      position: relative; }
+      .snt-page-nav ul li:hover a span {
+        width: 10px;
+        height: 10px;
+        margin: -5px 0px 0px -5px; }
+      .snt-page-nav ul li a {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        text-decoration: none; }
+        .snt-page-nav ul li a span {
+          border-radius: 50%;
+          position: absolute;
+          z-index: 1;
+          height: 4px;
+          width: 4px;
+          border: 0;
+          background: #333;
+          left: 50%;
+          top: 50%;
+          margin: -2px 0 0 -2px;
+          -webkit-transition: all 0.1s ease-in-out;
+          -moz-transition: all 0.1s ease-in-out;
+          -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out; }
+
 .section-block {
   position: relative;
   margin: 5% auto;
@@ -310,7 +354,7 @@ body {
       .blog-block .pagination-wrap .pagination-block li a {
         color: #f56618; }
   .blog-block .snt-question-btn {
-    padding: 10px 40px;
+    padding: 20px 30px;
     border-radius: 40px;
     color: #fff;
     text-transform: none;
@@ -392,8 +436,9 @@ body {
       padding: 5px; }
 
 .snt-callback-modal {
+  position: relative;
   background: #ff531e;
-  padding: 30px 40px;
+  padding: 30px 40px 50px 40px;
   border: none;
   border-radius: 60px;
   box-shadow: 0 31px 85px 15px rgba(0, 0, 0, 0.21);
@@ -411,7 +456,7 @@ body {
   .snt-callback-modal .callback-form {
     text-align: center; }
     .snt-callback-modal .callback-form input {
-      margin: 5px;
+      margin: 5px 0;
       height: 40px;
       width: 100%;
       color: #000;
@@ -421,6 +466,20 @@ body {
       outline: none;
       padding: 0 10px;
       font-size: 14px; }
+  .snt-callback-modal .snt-callback-btn {
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 255px;
+    padding: 15px 30px;
+    border-radius: 40px;
+    color: #fff;
+    text-transform: none;
+    font: 19px/25px GothamProRegular, sans-serif, sans-serif;
+    background: #9ae603;
+    text-transform: uppercase; }
 
 .inbasket-block {
   margin-top: 50px; }
