@@ -69,8 +69,19 @@
   <div class="overflow">
     <header id="header">
     </header>
-    <div class="main-wrapper">
-        <div class="header-bg" id="section0">
+    
+    <div class="snt-page-nav">
+       <ul>
+         <li><a href="#scrollNav-0" class=""><span></span></a></li>
+         <li><a href="#scrollNav-1" class=""><span></span></a></li>
+         <li><a href="#scrollNav-2" class=""><span></span></a></li>
+         <li><a href="#scrollNav-3" class=""><span></span></a></li>
+       </ul>
+     </div>
+    
+    
+    <div class="main-wrapper post__article">
+        <div class="header-bg" id="scrollNav-0">
           <div class="container">
             <div class="section-block header-block">
               <div class="phone-block">
@@ -118,7 +129,7 @@
           <img class="header-wave-img" src="images/wave.png">
         </div><!--END section0-->
         
-        <div class="choose-bg" id="section1">
+        <div class="choose-bg" id="scrollNav-1">
           <div class="container">
               <div class="section-block choose-block">
                   <div class="row">
@@ -279,7 +290,7 @@
             </div>
         </div><!--END section1-->
         
-        <div class="appointment-bg" id="section2">
+        <div class="appointment-bg" id="scrollNav-2">
           <div class="container">
             <div class="section-block appointment-block">
               <h3 class="section-title">Выберите нужное назначение</h3>
@@ -317,7 +328,7 @@
           </div>
         </div><!--END section2-->
         
-        <div class="delivery-bg" id="section3">
+        <div class="delivery-bg" id="scrollNav-3">
           <div class="container">
             <div class="section-block delivery-block">
               <h3 class="section-title">Доставка</h3>
@@ -730,18 +741,15 @@
     </div><!--END  Modal contacts -->
  
  
-<div class="snt-page-nav">
-   <ul>
-     <li><a href="#firstPage" class=""><span></span></a></li>
-     <li><a href="#secondPage" class=""><span></span></a></li>
-     <li><a href="#3rdPage" class="active"><span></span></a></li>
-   </ul>
- </div>
+
  
 </div>
 <script src="js/jquery-2.2.0.min.js"></script>
 <script src="js/bootstrap.js"></script>
-
+<script src="js/jquery.scrollNav.js"></script>
+  <script>
+    $('.post__article').scrollNav();
+  </script>
 <script src="js/main.js"></script>
 </body>
 </html>
