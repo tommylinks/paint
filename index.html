@@ -70,14 +70,17 @@
     <header id="header">
     </header>
     
-    <div class="snt-page-nav">
+    <nav id="nav" class="snt-page-nav">
        <ul>
          <li><a href="#scrollNav-0" class=""><span></span></a></li>
          <li><a href="#scrollNav-1" class=""><span></span></a></li>
          <li><a href="#scrollNav-2" class=""><span></span></a></li>
          <li><a href="#scrollNav-3" class=""><span></span></a></li>
+         <li><a href="#scrollNav-4" class=""><span></span></a></li>
+         <li><a href="#scrollNav-5" class=""><span></span></a></li>
+         <li><a href="#scrollNav-6" class=""><span></span></a></li>
        </ul>
-     </div>
+     </nav>
     
     
     <div class="main-wrapper post__article">
@@ -108,12 +111,12 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                       <li><a href="#" data-toggle="modal" data-target="#contactsModal">Контакты</a></li>
-                      <li><a href="#">Ассортимент</a></li>
+                      <li><a href="#scrollNav-1">Ассортимент</a></li>
                       <li><a href="#">О нас</a></li>
-                      <li><a href="#">Партнерам</a></li>
+                      <li><a href="#scrollNav-6">Партнерам</a></li>
                       <li><a href="#">Качество</a></li>
                       <li><a href="#">Полезные советы</a></li>
-                      <li><a href="#">Оплата и доставка</a></li>
+                      <li><a href="#scrollNav-3">Оплата и доставка</a></li>
                     </ul>   
                   </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -359,7 +362,7 @@
           </div>
         </div><!--END section3-->
         
-        <div class="more-choose-bg" id="section4">
+        <div class="more-choose-bg" id="scrollNav-4">
           <div class="container">
             <div class="section-block more-choose-block">
               <div class="row">
@@ -510,7 +513,7 @@
           </div>
         </div><!--END section4-->
         
-        <div class="blog-bg" id="section5">
+        <div class="blog-bg" id="scrollNav-5">
           <div class="container">
             <div class="section-block blog-block">
               <h3 class="section-title">Выберите нужное назначение</h3>
@@ -586,7 +589,7 @@
           </div>
         </div><!--END section5-->
         
-        <div class="partners-bg" id="section6">
+        <div class="partners-bg" id="scrollNav-6">
          <h3 class="section-title-partners">Партнерам</h3>
           <div class="container">
             <div class="section-block partners-block">
@@ -636,7 +639,7 @@
         </div><!--END section6-->
         
         
-        <div class="inbasket-bg" id="section7">
+        <div class="inbasket-bg" id="scrollNav-7">
          <div class="container">
           <div class="inbasket-block">
               <div class="row">
@@ -746,9 +749,15 @@
 </div>
 <script src="js/jquery-2.2.0.min.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="js/jquery.scrollNav.js"></script>
+<script src="js/scrollNav.js"></script>
   <script>
-    $('.post__article').scrollNav();
+    $(document).ready(function() {
+	$('#nav').onePageNav();
+});
+  </script>
+  
+  <script>
+
   </script>
 <script src="js/main.js"></script>
 </body>

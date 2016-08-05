@@ -160,6 +160,17 @@ body{
       margin: 7px;
       position: relative;
       
+      &.current{
+        a{
+          span{
+            height: 12px;
+            width: 12px;
+            margin: -6px 0 0 -6px;
+            border-radius: 100%;
+          }
+        }
+      }
+      
       &:hover a span{
         width: 10px;
         height: 10px;

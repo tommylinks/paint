@@ -116,6 +116,11 @@ body {
       height: 13px;
       margin: 7px;
       position: relative; }
+      .snt-page-nav ul li.current a span {
+        height: 12px;
+        width: 12px;
+        margin: -6px 0 0 -6px;
+        border-radius: 100%; }
       .snt-page-nav ul li:hover a span {
         width: 10px;
         height: 10px;

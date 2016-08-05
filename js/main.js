@@ -33,3 +33,21 @@ if ($(window).width() >= 768) {
     
  $('#cat_top_cont_FyyThF_right_arr').unbind('click');   
 //<!--END stiky header-->
+
+//scroll to id
+  $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+//end scroll to id
