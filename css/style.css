@@ -152,7 +152,7 @@ body {
 .section-block {
   position: relative;
   margin: 5% auto;
-  min-height: 560px;
+  min-height: 650px;
   max-width: 1030px;
   width: 100%;
   padding: 20px 25px;
@@ -219,9 +219,12 @@ body {
       margin-left: 10px; }
       .header-block .language li a {
         font-size: 24px;
-        color: #fff; }
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 40px; }
         .header-block .language li a.active {
-          color: #0073c4; }
+          background: #0073c4; }
 
 .choose-bg {
   background: #5a4059; }
@@ -269,14 +272,15 @@ body {
     margin: 20px 30px 0 0; }
 
 .appointment-bg {
-  background: url("../images/top-wave.png") no-repeat 20% 0% #ffcc5f; }
+  background: url("../images/top-wave.png") no-repeat 20% 0% #e5e579; }
 
 .appointment-block {
-  background: url("../images/unicolor-bg.png") no-repeat 0% 85% #fff794;
+  min-height: 650px;
+  background: url("../images/unicolor-bg.png") no-repeat 0% 95% #f4ad34;
   -webkit-box-shadow: 0 32px 85px 15px rgba(255, 180, 0, 0.48);
   -moz-box-shadow: 0 32px 85px 15px rgba(255, 180, 0, 0.48);
   box-shadow: 0 32px 85px 15px rgba(255, 180, 0, 0.48);
-  color: #fca55f;
+  color: #fff;
   font-size: 19px; }
   .appointment-block figure {
     margin: 0;
@@ -304,6 +308,10 @@ body {
   .delivery-block .snt-order-btn {
     background-color: #5a4059;
     margin-top: 20px; }
+  .delivery-block .delivery-b {
+    position: absolute;
+    bottom: 20px;
+    left: 20px; }
 
 .more-choose-bg {
   background: #5a4059; }
@@ -325,17 +333,18 @@ body {
       background: #f59618; }
 
 .blog-bg {
-  background: #ffef5f; }
+  background: #ffd45f; }
 
 .blog-block {
-  background: url("../images/unicolor-bg.png") no-repeat 0% 85% #fff794;
+  background: url("../images/unicolor2-bg.png") no-repeat 0% 85% #f4ad34;
   border-radius: 60px;
   -webkit-box-shadow: 0 32px 85px 15px rgba(255, 180, 0, 0.48);
   -moz-box-shadow: 0 32px 85px 15px rgba(163, 99, 14, 0.48);
   box-shadow: 0 32px 85px 15px rgba(163, 99, 14, 0.48);
-  color: #fca55f;
+  color: #5a4059;
   font-size: 19px;
-  text-align: center; }
+  text-align: center;
+  margin: 9% auto; }
   .blog-block .blog-wrap {
     margin-top: 20px; }
   .blog-block .blog-article {
@@ -346,7 +355,7 @@ body {
     .blog-block .blog-article figure {
       display: table-cell;
       vertical-align: middle;
-      background-color: #ffef5f;
+      background-color: #ffbb48;
       border-radius: 30px; }
       .blog-block .blog-article figure figcaption {
         max-height: 52px;
@@ -367,6 +376,10 @@ body {
     font: 19px/25px GothamProRegular, sans-serif, sans-serif;
     background: #f56618;
     text-transform: uppercase; }
+  .blog-block .delivery-bottle {
+    position: absolute;
+    left: -250px;
+    bottom: -70px; }
 
 .partners-bg {
   background: url("../images/partners-bg.png") no-repeat left top #593f58; }
