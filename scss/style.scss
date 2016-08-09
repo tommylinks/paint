@@ -772,7 +772,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eca833', end
   -webkit-animation: test-animation 1s infinite; /* Chrome, Safari, Opera */
   animation: test-animation 2s infinite;
   cursor: pointer;
-  @mixin transition: 1s;
+  @include transition(1s);
   
   
   &:hover{
