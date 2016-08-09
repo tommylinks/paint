@@ -268,6 +268,10 @@ body {
       position: absolute;
       bottom: -90px;
       left: -5px; }
+    .choose-block .choose-menu .snt-vm {
+      position: absolute;
+      bottom: -56px;
+      left: 29px; }
   .choose-block .choose-items {
     margin: 20px 30px 0 0; }
   .choose-block .choose-add-inbasket {
@@ -564,6 +568,10 @@ body {
   /* Chrome, Safari, Opera */
   animation: test-animation 2s infinite;
   cursor: pointer;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s;
   transition: 1s; }
   .partners-popup:hover {
     left: 0;
