@@ -378,13 +378,18 @@ body {
     display: table;
     width: 100%;
     margin: 10px 0; }
+    .blog-block .blog-article a {
+      color: #000;
+      text-decoration: none; }
     .blog-block .blog-article figure {
       display: table-cell;
       vertical-align: middle;
       background-color: #ffbb48;
-      border-radius: 30px; }
+      border-radius: 30px;
+      padding: 25px; }
       .blog-block .blog-article figure figcaption {
-        max-height: 52px;
+        margin-top: 20px;
+        max-height: 38px;
         overflow: hidden;
         text-transform: uppercase; }
   .blog-block .pagination-wrap .pagination-block {

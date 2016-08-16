@@ -523,17 +523,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eca833', end
     width: 100%;
     margin: 10px 0;
     
+    a{color:#000;text-decoration: none;}
     
     figure {
       display: table-cell;
       vertical-align: middle;
       background-color: #ffbb48;
       border-radius: 30px;
+      padding: 25px;
       
       figcaption{
-        max-height: 52px;
+        margin-top: 20px;
+        max-height: 38px;
         overflow: hidden;
         text-transform: uppercase;
+        
       }
     }
   }
